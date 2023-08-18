@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: inline-block;
+
+        }
+
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .options {
+            display: flex;
+        }
+
+        .option {
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid #111;
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+
+        .option:hover {
+            cursor: pointer;
+            background-color: #333;
+            border: 2px solid green;
+            border-radius: 5px;
+            transform: translate(5px);
+            z-index: 2;
+            color:rgb(25, 102, 234);
+        }
+        #menu_img{
+            width: 30px;
+            height: 30px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">Logo</a>
+        </div>
+
+        <div class="options">
+            <div class="option">About</div>
+            <div class="option">Contact Us</div>
+            <div class="option">Services</div>
+            <div class="option"><img id="menu_img" src="menu.gif" alt="Menu "></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
